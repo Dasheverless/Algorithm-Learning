@@ -44,6 +44,18 @@ vector<int> mergesort(vector<int> a, int p, int r)
     return merge(left, right);
 }
 
+int mergemax(vector<int> a, int p, int r)
+{
+    if (p >= r)
+    {
+        return a[p];
+    }
+    int q = (p + r) / 2;
+    int left = mergemax(a, p, q);
+    int right = mergemax(a, q + 1, r);
+    return max(left, right);
+}
+
 int main()
 {
     vector<int> b = { 0, 2, 8, 10, 3, 6, 4,8,7 };
