@@ -3,7 +3,17 @@
 typedef long long ll;
 using namespace std;
 const ll mod = 1e9 + 7;
-
+/*
+思路：
+    1. 广度优先搜索，禁止访问上一层节点得到最短路径
+    2. 动态规划记录路径数
+关键：
+    1.队列模拟广度优先搜索
+    2.动态规划递推
+下次：
+    1.动态规划路径数递推式：dp[son] += dp[fa];dp[1] = 1;
+    2.队列模拟广度优先搜索，迭代。
+*/
 int main()
 {
     int  n, m;
