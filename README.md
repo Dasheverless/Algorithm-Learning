@@ -1,2 +1,2 @@
 # Algorithm-Learning
-some code in algorithm learning
+Some code in algorithm learning
